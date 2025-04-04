@@ -127,7 +127,7 @@
   }
 </script>
 
-<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
   <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-700 animate-gradient"></div>
   
   <div class="relative z-10 text-center px-4">
