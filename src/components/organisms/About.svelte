@@ -12,8 +12,10 @@
         </div>
       </div>
       
-      <div class="animate-float">
-        <img src="your-image-url.jpg" alt="Profile" class="rounded-lg shadow-xl"/>
+      <div class="animate-float flex items-center justify-center">
+        <div class="image-container">
+          <img src="your-image-url.jpg" alt="Profile" class="profile-image rounded-lg shadow-xl"/>
+        </div>
       </div>
     </div>
   </div>
@@ -27,5 +29,20 @@
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
+  }
+  
+  .image-container {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 </style>
